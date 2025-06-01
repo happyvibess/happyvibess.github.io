@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <div className="container">
           <h2>Featured Content</h2>
           <div className="featured-grid">
-            <Link to="/blog" className="featured-card">
+            <Link to="/blog" className="featured-card" onClick={() => window.scrollTo(0, 0)}>
               <div className="card-content">
                 <h3>Wavelength Blog</h3>
                 <p>Explore technical insights and development stories</p>
