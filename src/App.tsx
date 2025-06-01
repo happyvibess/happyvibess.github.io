@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import WavelengthBlog from './components/Blog/WavelengthBlog';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <div className="app">
         <nav className="nav-menu">
           <Link to="/">Home</Link>
