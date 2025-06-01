@@ -11,6 +11,18 @@ export default defineConfig({
         manualChunks: undefined,
       },
     },
+    assetsDir: 'assets',
+    emptyOutDir: true,
+    sourcemap: true,
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  server: {
+    port: 3000,
+    open: true,
   },
 })
 
