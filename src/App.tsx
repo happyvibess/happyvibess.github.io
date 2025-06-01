@@ -17,13 +17,16 @@ function App() {
   return (
     <Router basename="/">
       <div className="app">
-        <nav className="nav-menu glass-nav">
+        <nav className="glass-nav">
           <div className="nav-brand">
             <Link to="/">Portfolio</Link>
           </div>
           <div className="nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/blog">Wavelength</Link>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/blog" className="nav-link nav-link-featured">
+              <span className="link-text">Wavelength</span>
+              <span className="link-icon">✨</span>
+            </Link>
           </div>
         </nav>
 
