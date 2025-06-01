@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Home.css';
 import MonetizationSection from '../MonetizationSection/MonetizationSection';
 
@@ -17,14 +16,13 @@ const Home: React.FC = () => {
         <div className="container">
           <h2>Featured Content</h2>
           <div className="featured-grid">
-            <Link to="/blog" className="featured-card" onClick={() => window.scrollTo(0, 0)}>
+            <div className="featured-card">
               <div className="card-content">
-                <h3>Wavelength Blog</h3>
-                <p>Explore technical insights and development stories</p>
-                <span className="cta-link">Read More →</span>
+                <h3>Services & Products</h3>
+                <p>Check out my digital products and services</p>
+                <span className="cta-link">Explore →</span>
               </div>
-            </Link>
-            {/* Add more featured cards as needed */}
+            </div>
           </div>
         </div>
       </section>
@@ -35,4 +33,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-
