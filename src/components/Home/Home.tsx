@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import MonetizationSection from '../MonetizationSection/MonetizationSection';
 
 const Home: React.FC = () => {
   return (
@@ -27,6 +28,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      
+      <MonetizationSection />
     </div>
   );
 };
